@@ -5,11 +5,11 @@ import java.util.Objects;
 public class Task {
     private int id;
 
-    public Task(int id){
+    public Task(int id) {
         this.id = id;
     }
 
-    public int GetId(){
+    public int GetId() {
         return id;
     }
 

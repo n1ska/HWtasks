@@ -9,7 +9,7 @@ class MeetingTest {
 
     @Test
     void getTopic() {
-        Meeting task = new Meeting(10, "shopping","Sunday", "17/06/2023 12:15");
+        Meeting task = new Meeting(10, "shopping", "Sunday", "17/06/2023 12:15");
 
         String actual = task.getTopic();
         String expected = "shopping";
@@ -19,7 +19,7 @@ class MeetingTest {
 
     @Test
     void getProject() {
-        Meeting task = new Meeting(10, "shopping","Sunday", "17/06/2023 12:15");
+        Meeting task = new Meeting(10, "shopping", "Sunday", "17/06/2023 12:15");
 
         String actual = task.getProject();
         String expected = "Sunday";
@@ -29,7 +29,7 @@ class MeetingTest {
 
     @Test
     void getStart() {
-        Meeting task = new Meeting(10, "shopping","Sunday", "17/06/2023 12:15");
+        Meeting task = new Meeting(10, "shopping", "Sunday", "17/06/2023 12:15");
 
         String actual = task.getStart();
         String expected = "17/06/2023 12:15";
@@ -39,7 +39,7 @@ class MeetingTest {
 
     @Test
     void matches() {
-        Meeting task = new Meeting(10, "shopping","Sunday", "17/06/2023 12:15");
+        Meeting task = new Meeting(10, "shopping", "Sunday", "17/06/2023 12:15");
 
         boolean actual = task.matches("shopping");
         boolean expected = true;
@@ -49,7 +49,7 @@ class MeetingTest {
 
     @Test
     void matchesByProject() {
-        Meeting task = new Meeting(10, "shopping","Sunday", "17/06/2023 12:15");
+        Meeting task = new Meeting(10, "shopping", "Sunday", "17/06/2023 12:15");
 
         boolean actual = task.matches("Sunday");
         boolean expected = true;
@@ -59,7 +59,7 @@ class MeetingTest {
 
     @Test
     void notMatches() {
-        Meeting task = new Meeting(10, "shopping","Sunday", "17/06/2023 12:15");
+        Meeting task = new Meeting(10, "shopping", "Sunday", "17/06/2023 12:15");
 
         boolean actual = task.matches("T-short");
         boolean expected = false;

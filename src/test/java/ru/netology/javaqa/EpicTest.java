@@ -19,7 +19,7 @@ class EpicTest {
 
     @Test
     void matches() {
-        Epic task = new Epic(20,new String[]{"1 task","2 task","3 task"});
+        Epic task = new Epic(20, new String[]{"1 task", "2 task", "3 task"});
 
         boolean actual = task.matches("2 task");
         boolean expected = true;
